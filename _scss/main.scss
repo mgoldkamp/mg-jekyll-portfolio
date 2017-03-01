@@ -1,6 +1,6 @@
-@import "reset";
-@import "syntax";
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/_reset";
 
-body {
-    background: white;
-}
+@import "1-base/base";
+
+@import "2-modules/nav";
