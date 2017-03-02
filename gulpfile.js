@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+const imagemin    = require('gulp-imagemin');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -51,13 +52,25 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+
+
+/**
+Image Min
+**/
+
+gulp.task('images', () =>
+    gulp.src('images/**')
+        .pipe(imagemin())
+        .pipe(gulp.dest('_site/images/'))
+);
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html' ,'_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('_images/**', ['images']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html' ,'_posts/*' ,'_images/*', 'js/**'], ['jekyll-rebuild']);
 });
 
 /**

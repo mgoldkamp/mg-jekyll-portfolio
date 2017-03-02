@@ -1,5 +1,14 @@
 body{
-  @include linear-gradient(#141E30, #243B55);
-
+  color: white;
   font-family: 'Muli', sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+
+  &:visted{
+    color:white;
+  }
 }
