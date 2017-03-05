@@ -70,7 +70,7 @@ gulp.task('images', () =>
 gulp.task('watch', function () {
     gulp.watch('_scss/**', ['sass']);
     gulp.watch('_images/**', ['images']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html' ,'_posts/*' ,'_images/*', 'js/**'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html' ,'_posts/*' ,'_images/*', 'js/**' , 'work/**'], ['jekyll-rebuild']);
 });
 
 /**

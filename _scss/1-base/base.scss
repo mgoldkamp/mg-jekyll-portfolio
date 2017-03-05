@@ -12,3 +12,51 @@ a{
     color:white;
   }
 }
+
+button{
+  color: white;
+}
+
+.pageWrapper{
+  background-image: url("../images/cartographer.png");
+  background-repeat:repeat;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+.pageContainer{
+  max-width: 1200px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+
+
+// TYPOGRAPHY
+h1,h2,h3,p{
+  margin: 0;
+}
+
+p{
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 20px;
+  letter-spacing: .8px;
+  margin-bottom: 20px;
+}
+
+h2{
+  margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 720px) {
+
+  .pageContainer{
+    padding: 0 10px;
+  }
+
+  p{
+    font-size:16px;
+  }
+}

@@ -1,76 +1,34 @@
-.bgWrapper-image{
-  background-image: url("../images/north-cascades-pct.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
 
+
+
+
+.introContainer{
+  @include grid-container;
+  margin-top: 120px;
 }
 
-
-.bgWrapper-gradient{
-  background-image: url("../images/cartographer.png");
-  background-repeat: repeat;
-  min-height: 100vh;
-  // @include transition(all 1s ease-in);
+.introGrid{
+  @include grid-column(12);
 
 }
+.name{
 
-
-.homePhotoLink{
-  display: block;
-  position: absolute;
-  bottom: 50px;
-  left:10%;
-  color: rgba(256,256,256,.5);
-  padding: 15px;
-  font-size: 14px;
-
-  :hover{
-    color: rgba(256,256,256,1);
-  }
-}
-
-
-
-.homePhotoLink:hover + .bgWrapper-gradient {
-
-    background-image: none;
-
-}
-
-
-
-
-.introWrapper{
-  margin: 0 auto;
-  color: white;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 20%;
-  width: 80%;
-
-  h1{
-  font-weight: 400;
+  font-weight: 300;
   font-size: 90px;
   line-height: 1;
-  margin-bottom: 5px;
-  width: auto;
-  display: inline-block;
   letter-spacing: .8px;
+  margin: 0;
+  padding-bottom: 30px;
   }
 
 
-  p{
+  .introPara{
   font-weight: 400;
   line-height: 1.6;
   font-size: 20px;
-  max-width: 500px;
-  padding-left: 8px;
   letter-spacing: .8px;
+  width: 50%;
   }
-}
 
 .inlineLink{
   color: $primaryLight;
@@ -82,11 +40,13 @@
   }
 }
 
+
+
 .cta{
   padding: 15px;
   width: 200px;
   margin: 10px;
-  margin-left:8px;
+  margin-left: 0;
   border-radius: 4px;
   border: none;
   background-color: $primaryLight;
@@ -105,5 +65,99 @@
 
   &:visted{
     color: white;
+  }
+}
+
+.secondary{
+  background-color: rgba(256,256,256, .3);
+
+  &:hover{
+    background-color: rgba(256,256,256, .2);
+  }
+}
+
+
+.projectsContainer{
+  @include grid-container;
+  margin-top: 150px;
+}
+
+
+.projectThumbnail{
+  @include grid-column(8);
+
+}
+
+
+.projectdescription{
+    @include grid-column(4);
+
+}
+
+.projectName{
+  font-size: 60px;
+  line-height: 1;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: $primaryLight;
+  @include transition(all .5s ease-in-out);
+
+  &:hover{
+    color: $primaryDark
+  }
+}
+
+.subhead{
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+
+.project{
+  margin-bottom: 80px;
+}
+
+.categoryItem{
+  padding: 3px 7px;;
+  background-color: white;
+  color: #333;
+  font-size: 12px;
+  opacity: .4;
+}
+
+
+
+
+// RESPONSIVE
+
+@media (max-width: 720px) {
+
+  .name{
+    font-size: 72px;
+  }
+  .introPara{
+    width: 100%;
+  }
+
+  .projectThumbnail{
+    @include grid-column(12);
+  }
+  .projectdescription{
+      @include grid-column(12);
+
+  }
+  .projectName{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .name{
+    font-size: 36px;
   }
 }

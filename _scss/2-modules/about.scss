@@ -1,0 +1,42 @@
+.aboutContainer .imageContainer{
+  @include grid-container;
+  padding-bottom: 60px;
+}
+
+.aboutGrid{
+  @include grid-column(8);
+  @include grid-push(2);
+  margin-top:120px;
+  margin-bottom: 60px;
+}
+
+.imageContainer{
+  padding-top: 60px;
+}
+.aboutImage1{
+  @include grid-column(3);
+  @include grid-push(2);
+}
+
+.aboutImage2{
+  @include grid-column(5);
+}
+
+
+
+@media (max-width: 720px) {
+  .aboutGrid{
+    @include grid-column(12);
+    @include grid-push(0);
+  }
+  .aboutImage1{
+    @include grid-column(12);
+    @include grid-push(0);
+    margin-bottom: 40px;
+  }
+
+  .aboutImage2{
+    @include grid-column(12);
+  }
+
+}

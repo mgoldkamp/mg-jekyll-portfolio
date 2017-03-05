@@ -1,50 +1,102 @@
-.allProjectWrapper{
-  margin-top: 30px;
+.sectionWrapper{
+  @include grid-container;
+  margin-top: 120px;
 }
 
-.projectWrapper{
-  margin-left: 20%;
-  padding: 30px 0;
-  max-width: 50%;
-
-  h1{
-    color: $primaryLight;
-}
-
-
-  p{
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 18px;
-    letter-spacing: .8px;
-
-  }
-
-  &:hover {
-    h1{
-      color: $primaryDark;
-
-    }
-
-    .categories{
-      opacity: .4;
-    }
-
-    p{
-      color: rgba(256, 256, 256, .8)
-    }
+.workTemplate{
+  .projectdescription{
+    @include grid-push(2);
   }
 }
 
 
-.categories{
+
+
+.workIntroPara{
+  @include grid-column(8);
+  @include grid-push(2);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+.singlePhotoContainer{
+  @include grid-column(12);
+
+  img{
+    width: 100%;
+  }
+}
+
+
+.copyWrapper{
+    @include grid-container;
+
+
+
+}
+
+.copyContainer{
+  @include grid-column(8);
+  @include grid-push(2);
+  padding: 60px 0;
+}
+
+
+.twoPhotoContainer{
+  @include grid-column(12);
+}
+
+.twoPhoto{
+  @include grid-column(6);
+}
+
+
+.workNavigation{
+  width: 100%;
+}
+
+.nextPrevWrapper{
+  text-align: center;
+
+}
+
+.navBtn{
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(256,256,256 , .4);
+  width: 60px;
+}
+
+.pageNumber{
+  text-align: center;
+  color: rgba(256,256,256 , .1);
   margin-top: 20px;
-  opacity: .8;
-
+  font-size: 100px;
+  font-weight: 300;
 }
-.categoryItem{
-  padding: 3px 7px;;
-  background-color: white;
-  color: #333;
-  font-size: 12px;
+
+
+@media (max-width: 720px) {
+
+  .twoPhoto{
+    @include grid-column(12);
+    margin-bottom: 20px;
+  }
+
+  .copyContainer{
+    @include grid-column(12);
+
+  }
+
+  .workIntroPara{
+    @include grid-column(12);
+
+  }
+  .workTemplate{
+    .projectdescription{
+      @include grid-push(0);
+    }
+  }
+
 }
