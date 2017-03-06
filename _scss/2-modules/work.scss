@@ -5,7 +5,14 @@
 
 .workTemplate{
   .projectdescription{
+    @include grid-column(8);
     @include grid-push(2);
+
+
+  .projectName{
+    color: white;
+
+  }
   }
 }
 
@@ -54,10 +61,13 @@
 
 .workNavigation{
   width: 100%;
+  clear: both;
+
 }
 
 .nextPrevWrapper{
   text-align: center;
+  padding-top: 30px;
 
 }
 
@@ -96,6 +106,7 @@
   .workTemplate{
     .projectdescription{
       @include grid-push(0);
+      @include grid-column(12);
     }
   }
 

@@ -31,8 +31,8 @@
   }
 
 .inlineLink{
-  color: $primaryLight;
-  font-weight: 800;
+  color: white;
+  font-weight: 900;
   @include transition(all .5s ease-in-out);
 
   &:hover{
@@ -80,11 +80,24 @@
 .projectsContainer{
   @include grid-container;
   margin-top: 150px;
+
+  &:hover{
+    .projectThumbnail{
+      background-color: rgba(256,256,256, .6);
+
+    }
+    .projectName{
+      color: $primaryDark;
+    }
+  }
 }
 
 
 .projectThumbnail{
   @include grid-column(8);
+  background-color: white;
+  @include transition(all .5s ease-in-out);
+
 
 }
 
@@ -103,9 +116,7 @@
   color: $primaryLight;
   @include transition(all .5s ease-in-out);
 
-  &:hover{
-    color: $primaryDark
-  }
+
 }
 
 .subhead{
