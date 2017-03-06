@@ -64,6 +64,10 @@
     @include grid-column(12);
   }
 
+  .aboutImage3{
+    @include grid-column(12);
+  }
+
   .quote{
     font-size: 16px;
 
