@@ -3,7 +3,8 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-const imagemin    = require('gulp-imagemin');
+const imagemin   = require('gulp-imagemin');
+var deploy      = require("gulp-gh-pages");
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -78,3 +79,11 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+
+
+// DEPLOY
+gulp.task("deploy", ["jekyll-build"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
+});

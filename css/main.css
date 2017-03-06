@@ -733,6 +733,18 @@ h2 {
   float: left;
   margin-left: 20px; }
 
+.quoteWrapper {
+  border-left: 1px solid white; }
+
+.quote {
+  font-size: 20px;
+  padding-left: 40px; }
+
+.author {
+  padding-left: 40px;
+  font-size: 16;
+  margin-bottom: 60px; }
+
 @media (max-width: 720px) {
   .aboutGrid {
     width: calc(100% - 40px);
@@ -748,7 +760,9 @@ h2 {
   .aboutImage2 {
     width: calc(100% - 40px);
     float: left;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  .quote {
+    font-size: 16px; } }
 
 .formWrapper {
   margin-top: 120px; }

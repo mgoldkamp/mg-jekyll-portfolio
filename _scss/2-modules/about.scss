@@ -22,6 +22,24 @@
   @include grid-column(5);
 }
 
+.quoteWrapper{
+  border-left: 1px solid white;
+}
+
+.quote{
+  font-size: 20px;
+  padding-left: 40px;
+
+}
+
+.author{
+
+  padding-left: 40px;
+  font-size: 16;
+  margin-bottom: 60px;
+
+}
+
 
 
 @media (max-width: 720px) {
@@ -37,6 +55,11 @@
 
   .aboutImage2{
     @include grid-column(12);
+  }
+
+  .quote{
+    font-size: 16px;
+
   }
 
 }
