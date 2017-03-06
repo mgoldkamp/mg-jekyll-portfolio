@@ -634,12 +634,20 @@ h2 {
   margin-top: 60px;
   margin-bottom: 60px; }
 
-.singlePhotoContainer {
+.singlePhotoContainer::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.singlePhotoContainer img {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px; }
-  .singlePhotoContainer img {
-    width: 100%; }
+
+.imageSpace {
+  clear: both; }
+  .imageSpace img {
+    padding-top: 20px; }
 
 .copyWrapper::after {
   clear: both;
@@ -653,10 +661,10 @@ h2 {
   margin-left: calc(16.66667% - 23.33333px + 40px);
   padding: 60px 0; }
 
-.twoPhotoContainer {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px; }
+.twoPhotoContainer::after {
+  clear: both;
+  content: "";
+  display: block; }
 
 .twoPhoto {
   width: calc(50% - 30px);
