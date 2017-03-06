@@ -30,19 +30,17 @@
 .singlePhotoContainer{
   @include grid-container;
 
-
-
   img{
     @include grid-column(12);
 
-}
+  }
 }
 .imageSpace{
   clear:both;
   img{
   padding-top: 20px;
 
-}
+  }
 }
 
 
