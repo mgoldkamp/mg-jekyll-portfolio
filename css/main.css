@@ -412,6 +412,13 @@ a {
   a:visted {
     color: white; }
 
+.link {
+  color: #27ae60; }
+  .link:hover {
+    color: #1D874A; }
+  .link:visted {
+    color: #1D874A; }
+
 button {
   color: white; }
 

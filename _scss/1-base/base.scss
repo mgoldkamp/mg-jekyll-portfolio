@@ -13,6 +13,18 @@ a{
   }
 }
 
+.link{
+  color:$primaryLight;
+
+  &:hover{
+    color: $primaryDark;
+  }
+
+  &:visted{
+    color: $primaryDark;
+  }
+}
+
 button{
   color: white;
 }
