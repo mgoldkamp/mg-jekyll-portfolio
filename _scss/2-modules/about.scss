@@ -1,4 +1,4 @@
-.aboutContainer .imageContainer{
+.aboutContainer{
   @include grid-container;
   padding-bottom: 60px;
 }
@@ -11,7 +11,8 @@
 }
 
 .imageContainer{
-  padding-top: 60px;
+  padding-top: 20px;
+  clear:both;
 }
 .aboutImage1{
   @include grid-column(3);
@@ -20,6 +21,12 @@
 
 .aboutImage2{
   @include grid-column(5);
+
+}
+
+.aboutImage3{
+  @include grid-column(8);
+  @include grid-push(2);
 }
 
 .quoteWrapper{

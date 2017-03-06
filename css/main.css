@@ -511,7 +511,7 @@ h2 {
   line-height: 1.6;
   font-size: 20px;
   letter-spacing: .8px;
-  width: 50%; }
+  width: 45%; }
 
 .inlineLink {
   color: white;
@@ -704,9 +704,9 @@ h2 {
     float: left;
     margin-left: 20px; } }
 
-.aboutContainer .imageContainer {
+.aboutContainer {
   padding-bottom: 60px; }
-  .aboutContainer .imageContainer::after {
+  .aboutContainer::after {
     clear: both;
     content: "";
     display: block; }
@@ -720,7 +720,8 @@ h2 {
   margin-bottom: 60px; }
 
 .imageContainer {
-  padding-top: 60px; }
+  padding-top: 20px;
+  clear: both; }
 
 .aboutImage1 {
   width: calc(25% - 25px);
@@ -732,6 +733,12 @@ h2 {
   width: calc(41.66667% - 28.33333px);
   float: left;
   margin-left: 20px; }
+
+.aboutImage3 {
+  width: calc(66.66667% - 33.33333px);
+  float: left;
+  margin-left: 20px;
+  margin-left: calc(16.66667% - 23.33333px + 40px); }
 
 .quoteWrapper {
   border-left: 1px solid white; }
