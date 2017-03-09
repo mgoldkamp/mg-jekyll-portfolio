@@ -712,7 +712,10 @@ h2 {
   .prototypeLink a {
     padding: 8px 14px 8px 14px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease-in-out; }
+    .prototypeLink a:hover {
+      background-color: rgba(255, 255, 255, 0.05); }
 
 @media (max-width: 720px) {
   .twoPhoto {
