@@ -14,7 +14,17 @@ a{
 }
 
 .link{
-  color:$primaryLight;
+  padding: 8px 14px 8px 14px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0, .4);
+  @include transition(all .5s ease-in-out);
+  color: $primaryLight;
+
+  &:hover{
+    background-color: rgba(0,0,0, .2);
+    color: $primaryDark
+
+  }
 
   &:hover{
     color: $primaryDark;
