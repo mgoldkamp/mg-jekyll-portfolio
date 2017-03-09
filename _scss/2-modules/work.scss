@@ -96,6 +96,41 @@
   font-weight: 300;
 }
 
+.captionWrapper{
+  position: relative;
+
+}
+
+.caption{
+  position: absolute;
+  bottom: px;
+  left: 0px;
+  padding-left: 20px;
+  background-color: #252525;
+  display: inline-block;
+  padding: 10px 10px 10px 25px;
+  font-size: 11px;
+}
+
+.prototypeLink{
+  margin-top: 20px;
+  display: inline-block;
+
+
+  a{
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    background-color: rgba(256,256,256, .1);
+    @include transition(all .5s ease-in-out);
+
+    &:hover{
+      background-color: rgba(256,256,256, .05);
+
+    }
+
+  }
+}
+
 
 @media (max-width: 720px) {
 
