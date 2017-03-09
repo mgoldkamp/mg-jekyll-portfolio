@@ -19,6 +19,7 @@ a{
   background-color: rgba(0,0,0, .4);
   @include transition(all .5s ease-in-out);
   color: $primaryLight;
+  line-height: 2.5;
 
   &:hover{
     background-color: rgba(0,0,0, .2);
