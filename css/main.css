@@ -706,6 +706,14 @@ h2 {
   padding: 10px 10px 10px 25px;
   font-size: 11px; }
 
+.prototypeLink {
+  margin-top: 20px;
+  display: inline-block; }
+  .prototypeLink a {
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1); }
+
 @media (max-width: 720px) {
   .twoPhoto {
     width: calc(100% - 40px);
