@@ -37,6 +37,20 @@ a{
   }
 }
 
+.inlineLink{
+  color: $primaryLight;
+  font-weight: 400;
+  @include transition(color .5s ease-in-out);
+
+  &:hover{
+    color: $primaryDark;
+  }
+  &:visted{
+    color: $primaryLight;
+  }
+}
+
+
 button{
   color: white;
 }

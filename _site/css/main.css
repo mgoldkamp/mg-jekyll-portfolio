@@ -428,6 +428,15 @@ a {
   .link:visted {
     color: #1D874A; }
 
+.inlineLink {
+  color: #27ae60;
+  font-weight: 400;
+  transition: color 0.5s ease-in-out; }
+  .inlineLink:hover {
+    color: #1D874A; }
+  .inlineLink:visted {
+    color: #27ae60; }
+
 button {
   color: white; }
 
@@ -521,13 +530,6 @@ h2 {
   font-size: 20px;
   letter-spacing: .8px;
   width: 45%; }
-
-.inlineLink {
-  color: white;
-  font-weight: 900;
-  transition: all 0.5s ease-in-out; }
-  .inlineLink:hover {
-    color: #1D874A; }
 
 .cta {
   padding: 15px;

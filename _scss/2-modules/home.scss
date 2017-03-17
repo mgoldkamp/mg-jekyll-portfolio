@@ -30,15 +30,6 @@
   width: 45%;
   }
 
-.inlineLink{
-  color: white;
-  font-weight: 900;
-  @include transition(all .5s ease-in-out);
-
-  &:hover{
-    color: $primaryDark;
-  }
-}
 
 
 
