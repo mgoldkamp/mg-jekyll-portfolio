@@ -523,8 +523,8 @@ h2 {
   width: 45%; }
 
 .inlineLink {
-  color: white;
-  font-weight: 900;
+  color: #27ae60;
+  font-weight: 400;
   transition: all 0.5s ease-in-out; }
   .inlineLink:hover {
     color: #1D874A; }
