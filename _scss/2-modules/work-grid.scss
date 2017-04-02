@@ -1,0 +1,27 @@
+.project-grid{
+  @include grid-container;
+  margin-top: 140px;
+}
+
+
+.grid-projectContainer{
+  height: 360px;
+  margin-bottom: 20px;
+  background-color: rgba(256,256,256,.02)
+}
+
+.grid-Large{
+  @include grid-column(8);
+
+
+}
+
+.grid-Small{
+  @include grid-column(4);
+
+}
+
+
+.grid-projectdescription{
+  padding: 20px;
+}

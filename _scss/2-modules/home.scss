@@ -9,12 +9,13 @@
 
 .introGrid{
   @include grid-column(12);
+  text-align: center;
 
 }
 .name{
 
   font-weight: 300;
-  font-size: 90px;
+  font-size: 60px;
   line-height: 1;
   letter-spacing: .8px;
   margin: 0;
@@ -25,9 +26,12 @@
   .introPara{
   font-weight: 400;
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: .8px;
   width: 45%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   }
 
 

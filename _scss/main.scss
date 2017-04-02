@@ -1,6 +1,7 @@
 @import "0-tools/bourbon/bourbon";
 @import "0-tools/neat/neat";
 @import "0-tools/_reset";
+@import "0-tools/fancybox/jquery.fancybox";
 
 @import "1-base/vars";
 @import "1-base/base";
@@ -10,3 +11,4 @@
 @import "2-modules/work";
 @import "2-modules/about";
 @import "2-modules/connect";
+@import "2-modules/work-grid";

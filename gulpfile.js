@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var deploy      = require("gulp-gh-pages");
+var minify      = require('gulp-minify');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -67,6 +68,24 @@ Image Min
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
+
+
+
+ gulp.task('compress', function() {
+  gulp.src('js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('_site/js'))
+});
+
+
+
 gulp.task('watch', function () {
     gulp.watch('_scss/**', ['sass']);
     gulp.watch('_images/**', ['images']);
@@ -77,7 +96,7 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch', 'compress']);
 
 
 
