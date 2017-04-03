@@ -3,8 +3,8 @@
   overflow: hidden; }
 
 .fancybox-enabled body {
-  overflow: visible;
-  height: 100%; }
+  overflow: scroll;
+  height: auto; }
 
 .fancybox-container {
   position: fixed;

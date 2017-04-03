@@ -407,8 +407,8 @@ template {
   overflow: hidden; }
 
 .fancybox-enabled body {
-  overflow: visible;
-  height: 100%; }
+  overflow: scroll;
+  height: auto; }
 
 .fancybox-container {
   position: fixed;
@@ -1101,15 +1101,15 @@ h2 {
 .brand {
   width: 100%;
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 20px; }
 
 .brandText {
   font-weight: 300;
-  font-size: 48px; }
+  font-size: 20px; }
 
 @media (max-width: 400px) {
   .nav li a {
-    padding: 60px 15px 60px 15px; } }
+    padding: 20px 15px 60px 15px; } }
 
 .introContainer {
   margin-top: 120px; }
@@ -1204,14 +1204,6 @@ h2 {
 .project {
   margin-bottom: 80px; }
 
-.categoryItem {
-  padding: 3px 7px;
-  background-color: white;
-  color: #333;
-  font-size: 12px;
-  opacity: .4;
-  line-height: 2; }
-
 @media (max-width: 990px) {
   .name {
     font-size: 72px; }
@@ -1231,7 +1223,13 @@ h2 {
 
 @media (max-width: 400px) {
   .name {
-    font-size: 36px; } }
+    font-size: 36px; }
+  .introContainer {
+    margin-top: 40px; }
+    .introContainer::after {
+      clear: both;
+      content: "";
+      display: block; } }
 
 .sectionWrapper {
   margin-top: 120px; }
@@ -1331,7 +1329,7 @@ h2 {
   margin-top: 20px;
   display: inline-block; }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .twoPhoto {
     width: calc(100% - 40px);
     float: left;
@@ -1487,9 +1485,13 @@ h2 {
     display: block; }
 
 .grid-projectContainer {
-  height: 360px;
+  height: 400px;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.02); }
+  background-color: #000;
+  background-size: cover; }
+  .grid-projectContainer:hover .grid-projectName, .grid-projectContainer:hover .grid-subhead, .grid-projectContainer:hover .grid-categoryItem {
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
 
 .grid-Large {
   width: calc(66.66667% - 33.33333px);
@@ -1503,3 +1505,84 @@ h2 {
 
 .grid-projectdescription {
   padding: 20px; }
+
+.grid-projectName {
+  font-size: 32px;
+  color: white;
+  line-height: 1.2;
+  font-weight: 400; }
+
+.grid-subhead {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px 0 15px 0; }
+
+.grid-categoryItem {
+  padding: 3px 7px;
+  background-color: white;
+  color: #333;
+  font-size: 12px;
+  opacity: .4;
+  line-height: 2; }
+
+.wireMe {
+  background-image: url("../images/wireme-tile-bg-fade.png");
+  background-position: center center; }
+  .wireMe:hover {
+    background-image: url("../images/wireme-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.haikuDeck {
+  background-image: url("../images/haiku-tile-bg-fade.png");
+  background-position: center top; }
+  .haikuDeck:hover {
+    background-image: url("../images/haiku-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.circle {
+  background-image: url("../images/circle-tile-bg-fade.png");
+  background-position: center center; }
+  .circle:hover {
+    background-image: url("../images/circle-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.dicks {
+  background-image: url("../images/dicks-tile-bg-fade.png");
+  background-position: left top; }
+  .dicks:hover {
+    background-image: url("../images/dicks-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.openCommander {
+  background-image: url("../images/openCommander-tile-bg-fade.png");
+  background-position: left top; }
+  .openCommander:hover {
+    background-image: url("../images/openCommander-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.cbBain {
+  background-image: url("../images/bain-tile-bg-fade.png");
+  background-position: left top; }
+  .cbBain:hover {
+    background-image: url("../images/bain-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+@media (max-width: 1000px) {
+  .grid-Large {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px; }
+  .grid-Small {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px; } }
+
+@media (max-width: 1000px) {
+  .grid-Large {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
+  .grid-Small {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; } }

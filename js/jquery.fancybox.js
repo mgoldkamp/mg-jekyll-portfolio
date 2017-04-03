@@ -40,13 +40,13 @@
         gutter : 30,
 
         // Should display toolbars
-        infobar : true,
+        infobar : false,
         buttons : true,
 
         // What buttons should appear in the toolbar
-        slideShow  : true,
+        slideShow  : false,
         fullScreen : true,
-        thumbs     : true,
+        thumbs     : false,
         closeBtn   : true,
 
         // Should apply small close button at top right corner of the content
@@ -90,7 +90,7 @@
             preload : true,
 
             // Scrolling attribute for iframe tag
-            scrolling : 'no',
+            scrolling : 'yes',
 
             // Custom CSS styling for iframe wrapping element
             css : {}

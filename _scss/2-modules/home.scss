@@ -125,15 +125,6 @@
   margin-bottom: 80px;
 }
 
-.categoryItem{
-  padding: 3px 7px;;
-  background-color: white;
-  color: #333;
-  font-size: 12px;
-  opacity: .4;
-  line-height: 2;
-}
-
 
 
 
@@ -166,5 +157,10 @@
 
   .name{
     font-size: 36px;
+  }
+
+  .introContainer{
+    @include grid-container;
+    margin-top: 40px;
   }
 }

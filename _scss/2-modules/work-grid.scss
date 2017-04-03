@@ -5,9 +5,18 @@
 
 
 .grid-projectContainer{
-  height: 360px;
+  height: 400px;
   margin-bottom: 20px;
-  background-color: rgba(256,256,256,.02)
+  background-color: #000;
+  background-size: cover;
+
+
+  &:hover{
+    .grid-projectName, .grid-subhead, .grid-categoryItem{
+      opacity: 0;
+      @include transition(all .5s ease-in-out);
+    }
+  }
 }
 
 .grid-Large{
@@ -24,4 +33,123 @@
 
 .grid-projectdescription{
   padding: 20px;
+}
+
+// TYPOGRAPHY
+
+.grid-projectName{
+  font-size: 32px;
+  color: white;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.grid-subhead{
+    font-size: 20px;
+    font-weight: 300;
+    margin:10px 0 15px 0;
+}
+
+.grid-categoryItem{
+  padding: 3px 7px;;
+  background-color: white;
+  color: #333;
+  font-size: 12px;
+  opacity: .4;
+  line-height: 2;
+}
+
+// IMAGES
+
+.wireMe{
+  background-image: url('../images/wireme-tile-bg-fade.png');
+  background-position: center center;
+
+  &:hover{
+    background-image: url('../images/wireme-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+.haikuDeck{
+  background-image: url('../images/haiku-tile-bg-fade.png');
+  background-position: center top;
+
+  &:hover{
+    background-image: url('../images/haiku-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+.circle{
+  background-image: url('../images/circle-tile-bg-fade.png');
+  background-position: center center;
+
+  &:hover{
+    background-image: url('../images/circle-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+.dicks{
+  background-image: url('../images/dicks-tile-bg-fade.png');
+  background-position: left top;
+
+  &:hover{
+    background-image: url('../images/dicks-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+.openCommander{
+  background-image: url('../images/openCommander-tile-bg-fade.png');
+  background-position: left top;
+
+  &:hover{
+    background-image: url('../images/openCommander-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+.cbBain{
+  background-image: url('../images/bain-tile-bg-fade.png');
+  background-position: left top;
+
+  &:hover{
+    background-image: url('../images/bain-tile-bg.png');
+    @include transition(all .5s ease-in-out);
+  }
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+  .grid-Large{
+    @include grid-column(6);
+
+
+  }
+
+  .grid-Small{
+    @include grid-column(6);
+
+  }
+
+
+}
+
+
+@media (max-width: 1000px) {
+
+  .grid-Large{
+    @include grid-column(12);
+  }
+
+  .grid-Small{
+    @include grid-column(12);
+  }
+
+
 }
