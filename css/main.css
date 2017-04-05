@@ -1254,15 +1254,16 @@ h2 {
   margin-top: 60px;
   margin-bottom: 60px; }
 
-.singlePhotoContainer::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.singlePhotoContainer img {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px; }
+.singlePhotoContainer {
+  margin-bottom: 20px; }
+  .singlePhotoContainer::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .singlePhotoContainer img {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
 
 .imageSpace {
   clear: both; }
@@ -1281,10 +1282,12 @@ h2 {
   margin-left: calc(16.66667% - 23.33333px + 40px);
   padding: 60px 0; }
 
-.twoPhotoContainer::after {
-  clear: both;
-  content: "";
-  display: block; }
+.twoPhotoContainer {
+  margin-bottom: 20px; }
+  .twoPhotoContainer::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 .twoPhoto {
   width: calc(50% - 30px);
@@ -1322,7 +1325,8 @@ h2 {
   padding-left: 20px;
   background-color: #252525;
   display: inline-block;
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
   font-size: 11px; }
 
 .prototypeLink {
@@ -1565,6 +1569,13 @@ h2 {
   background-position: left top; }
   .cbBain:hover {
     background-image: url("../images/bain-tile-bg.png");
+    transition: all 0.5s ease-in-out; }
+
+.control {
+  background-image: url("../images/control-tile-bg-fade.png");
+  background-position: left top; }
+  .control:hover {
+    background-image: url("../images/control-tile-bg.png");
     transition: all 0.5s ease-in-out; }
 
 @media (max-width: 1000px) {

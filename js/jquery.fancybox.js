@@ -143,7 +143,7 @@
         keyboard : true,
 
         // Try to focus on first focusable element after opening
-        focus : true,
+        focus : false,
 
         // Close when clicked outside of the content
         closeClickOutside : true,

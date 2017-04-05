@@ -28,6 +28,7 @@
 
 
 .singlePhotoContainer{
+  margin-bottom: 20px;
   @include grid-container;
 
   img{
@@ -60,6 +61,7 @@
 
 .twoPhotoContainer{
   @include grid-container;
+  margin-bottom: 20px;
 
 }
 
@@ -108,7 +110,8 @@
   padding-left: 20px;
   background-color: #252525;
   display: inline-block;
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
   font-size: 11px;
 }
 
