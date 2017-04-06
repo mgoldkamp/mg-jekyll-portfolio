@@ -4344,3 +4344,7 @@
 
 
 }(document, window, window.jQuery));
+
+
+
+$.fancybox.defaults.hash = false;
